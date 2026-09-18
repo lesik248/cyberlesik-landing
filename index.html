@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Cyberlesik</title>
+    <link rel="icon" type="image/png" href="media/assets/favicon.png"">
 
     <!-- Pinyon Script font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
         rel="stylesheet"
     >
+
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.4.5/styles/overlayscrollbars.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,21 +32,21 @@
 
         <!-- Background -->
         <img
-            src="images/background.png"
+            src="media/assets/background.png"
             class="background"
             alt=""
         >
 
         <!-- Top lace -->
         <img
-            src="images/lace-bottom.png"
+            src="media/assets/lace.png"
             class="lace top-lace"
             alt=""
         >
 
         <!-- Bottom lace -->
         <img
-            src="images/lace-bottom.png"
+            src="media/assets/lace.png"
             class="lace bottom-lace"
             alt=""
         >
@@ -57,7 +60,7 @@
                 <span class="line"></span>
 
                 <img
-                    src="images/bow.png"
+                    src="media/assets/bow.png"
                     class="bow"
                     alt="Bow"
                 >
@@ -68,7 +71,7 @@
 
 
             <img
-                src="images/cyberlesik.png"
+                src="media/logo/cyberlesik.gif"
                 class="cyberlesik"
                 style="width: 95vw !important; max-width: 700px !important;"
                 alt="Cyberlesik"
@@ -80,28 +83,28 @@
 
                 <a href="https://www.linkedin.com/in/alesya-yarmosh/" class="social">
                     <img
-                        src="images/linkedin.png"
+                        src="media/socials/linkedin.png"
                         alt="LinkedIn"
                     >
                 </a>
 
-                <a href="files/cv.pdf" class="social">
+                <a href="media/socials/cv.png" class="social">
                     <img
-                        src="images/cv.png"
+                        src="media/socials/cv.png"
                         alt="CV"
                     >
                 </a>
 
                 <a href="https://github.com/lesik248" class="social">
                     <img
-                        src="images/github.png"
+                        src="media/socials/github.png"
                         alt="GitHub"
                     >
                 </a>
 
                 <a href="mailto:alesya.yarmosh24@gmail.com" class="social">
                     <img
-                        src="images/email.png"
+                        src="media/socials/email.png"
                         alt="Email"
                     >
                 </a>
@@ -122,21 +125,21 @@
 
         <!-- Background -->
         <img
-            src="images/background.png"
+            src="media/assets/background.png"
             class="background"
             alt=""
         >
 
         <!-- Top lace -->
         <img
-            src="images/lace-bottom.png"
+            src="media/assets/lace.png"
             class="lace top-lace"
             alt=""
         >
 
         <!-- Bottom lace -->
         <img
-            src="images/lace-bottom.png"
+            src="media/assets/lace.png"
             class="lace bottom-lace"
             alt=""
         >
@@ -151,7 +154,7 @@
                 <span class="line"></span>
 
                 <img
-                    src="images/bow.png"
+                    src="media/assets/bow.png"
                     class="bow"
                     alt="Bow"
                 >
@@ -175,7 +178,22 @@
             ©2026 Alesya Yarmosh
         </div>
 
+        <a class="back-to-top" href="#home" aria-label="Back to the first page">&uarr;</a>
+
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.4.5/browser/overlayscrollbars.browser.es6.min.js"></script>
+  
+  <!-- 3. Initialize the scrollbar on the entire body -->
+  <script>
+    const { OverlayScrollbars } = OverlayScrollbarsGlobal;
+    OverlayScrollbars(document.body, {
+      scrollbars: {
+        autoHide: 'scroll', // Hides automatically after scrolling
+        autoHideDelay: 800    // Fades out after 800ms of inactivity
+      }
+    });
+  </script>
 
 </body>
 </html>

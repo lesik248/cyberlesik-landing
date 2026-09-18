@@ -15,6 +15,25 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-color: transparent transparent;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -265,45 +284,26 @@ body {
     white-space: nowrap;
 }
 
-
-/* =========================
-   11. ARROWS
-========================= */
-
-.down-arrow,
-.up-arrow {
-
+.back-to-top {
     position: absolute;
-
-    right: 5%;
-
-    bottom: 15%;
-
+    right: 50px;
+    bottom: 120px;
     z-index: 20;
 
-    font-family: Arial, sans-serif;
-
-    font-size: 2.5rem;
-
     color: #1a1a1a;
-
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
     text-decoration: none;
 
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease-in-out;
 }
 
-
-.down-arrow:hover {
-
-    transform: translateY(5px);
+.back-to-top:hover,
+.back-to-top:focus-visible {
+    transform: translateY(-4px);
 }
-
-
-.up-arrow:hover {
-
-    transform: translateY(-5px);
-}
-
 
 /* =========================
    12. MOBILE
@@ -390,18 +390,8 @@ body {
         bottom: 10px;
     }
 
-    /* =========================
-   13. FULL SCREEN OVERLAY
-========================= */
-
-    /* .full-screen-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        z-index: 9999;
-        pointer-events: none;
-    } */
+    .back-to-top {
+        right: 16px;
+        bottom: 80px;
+    }
 }
