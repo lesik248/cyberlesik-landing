@@ -311,22 +311,6 @@ html::-webkit-scrollbar-track {
 
 @media (max-width: 600px) {
 
-    .lace {
-
-        height: 120px;
-    }
-
-    .top-lace {
-
-        top: -60px;
-    }
-
-    .bottom-lace {
-
-        bottom: -60px;
-    }
-
-
     .stripe {
 
         max-width: 90%;
@@ -375,7 +359,7 @@ html::-webkit-scrollbar-track {
 
     .quote {
 
-        font-size: 4rem;
+        font-size: 2.5rem;
 
         line-height: 1.3;
     }
@@ -383,11 +367,11 @@ html::-webkit-scrollbar-track {
 
     .copyright {
 
-        font-size: 0.75rem;
+        font-size: 0.6rem;
 
-        padding: 7px 14px;
+        padding: 4px 10px;
 
-        bottom: 10px;
+        bottom: 3px;
     }
 
     .back-to-top {
